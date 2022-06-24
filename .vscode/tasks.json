@@ -1,0 +1,30 @@
+{
+    // 使用g++完成c++文件的编译， -g 参数， -o 参数
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++ debug",
+            "command": "E:\\Programs\\compilers\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "main.cpp",
+                "swap.cpp",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "调试器生成的任务。"
+        }
+    ],
+    "version": "2.0.0"
+}
